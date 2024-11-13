@@ -126,7 +126,7 @@ export default function Inicio() {
           {produtos?.map((item) => (
             <div key={item.product_id} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
               <div className="h-56 w-full">
-                <a href="#">
+                <a>
                   <img className="mx-auto h-full dark:hidden" src={item.image_url} alt="" />
                   <img className="mx-auto hidden h-full dark:block" src={item.image_url} alt="" />
                 </a>
@@ -137,7 +137,7 @@ export default function Inicio() {
                   <span className="me-2 rounded bg-primary-100 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">R${parseFloat(item.discount).toFixed(2)} de desconto</span>
                 </div>
 
-                <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">{item.name}</a>
+                <a className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">{item.name}</a>
 
                 <ul className="mt-2 flex items-center gap-4">
                   <li className="flex items-center gap-2">
