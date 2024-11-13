@@ -1,6 +1,6 @@
 "use client";
-import Inicio from "./inicio/page";
 import GlobalContext from "@/context/GlobalContext";
+import Inicio from "./pages/inicio/page";
 
 export default function Home() {
     return (
