@@ -1,0 +1,16 @@
+.spinner{
+    width: 60px;
+    height: 60px;
+    border: solid 7px #1d4ed8;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation-name: spinner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spinner {
+    100%{
+        transform: rotate(360deg);
+    }
+}
